@@ -33,12 +33,14 @@ export default function PrometheusIQWebsite() {
         )}
       </nav>
 
-      <header className="flex flex-col items-center justify-center text-center py-20 px-4">
-        <img src={logo} alt="PrometheusIQ logo" className="w-full max-w-[600px] h-auto" />
+      <header className="flex flex-col items-center justify-center text-center pt-12 pb-8 px-4 overflow-hidden">
+        <div className="w-full max-w-[600px] overflow-hidden rounded-md">
+          <img src={logo} alt="PrometheusIQ logo" className="w-full h-auto object-cover object-center" />
+        </div>
       </header>
 
       <main className="max-w-4xl mx-auto px-4">
-        <section className="py-12 border-b border-gray-300">
+        <section className="pt-4 pb-12 border-b border-gray-300">
           <h2 className="text-3xl font-semibold mb-4 text-[#2f3639]">Who We Are</h2>
           <p className="text-lg leading-relaxed text-[#2f3639]">
             PrometheusIQ is a litigation support and legal strategy firm built for attorneys who demand more from their written advocacy.
