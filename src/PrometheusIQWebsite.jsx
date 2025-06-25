@@ -3,21 +3,33 @@ import logo from "../public/logo.png";
 
 export default function PrometheusIQWebsite() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-gray-800 font-[Inter]">
-      <header className="text-center py-12">
-        <img src={logo} alt="PrometheusIQ logo" className="mx-auto w-32 md:w-40" />
-        <p className="text-md text-orange-600 mt-4 tracking-wide uppercase">Intelligence Behind Every Argument</p>
+    <div className="min-h-screen bg-neutral-50 text-gray-800 font-sans">
+      <nav className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm border-b">
+        <div className="text-2xl font-bold tracking-wide text-gray-900">PrometheusIQ</div>
+        <ul className="flex gap-6 text-gray-700 text-md font-medium">
+          <li className="hover:text-orange-600 cursor-pointer">Home</li>
+          <li className="hover:text-orange-600 cursor-pointer">About</li>
+          <li className="hover:text-orange-600 cursor-pointer">Services</li>
+          <li className="hover:text-orange-600 cursor-pointer">Contact</li>
+        </ul>
+      </nav>
+
+      <header className="flex flex-col items-center justify-center text-center py-20">
+        <img src={logo} alt="PrometheusIQ logo" className="w-4/5 max-w-4xl h-auto" />
+        <p className="text-xl text-orange-600 mt-6 tracking-wide uppercase font-medium">
+          Intelligence Behind Every Argument
+        </p>
       </header>
 
       <main className="max-w-4xl mx-auto px-4">
         <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4">Who We Are</h2>
-          <p className="text-lg leading-relaxed">
+          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Who We Are</h2>
+          <p className="text-lg leading-relaxed text-gray-800">
             PrometheusIQ is a litigation support and legal strategy firm built for attorneys who demand more from their written advocacy.
             We specialize in high-impact brief writing, motion practice, appeals, and trial support, offering behind-the-scenes firepower
             for busy litigators and lean firms.
           </p>
-          <p className="mt-6 text-lg leading-relaxed">
+          <p className="mt-6 text-lg leading-relaxed text-gray-800">
             Founded by seasoned trial lawyers and legal writers, PrometheusIQ brings a rare blend of tactical intelligence, writing clarity,
             and strategic judgment to every assignment. Whether you’re facing summary judgment, prepping for appeal, or mid-trial and
             stretched thin, we’re here to elevate your advocacy—quietly, powerfully, and surgically.
@@ -25,8 +37,8 @@ export default function PrometheusIQWebsite() {
         </section>
 
         <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4">Our Services</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg">
+          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Our Services</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-gray-800">
             <li>Motion and Brief Drafting</li>
             <li>Appellate Strategy and Support</li>
             <li>Trial Prep Materials and On-Call Drafting</li>
@@ -35,8 +47,8 @@ export default function PrometheusIQWebsite() {
         </section>
 
         <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
-          <p className="text-lg mb-6">
+          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Contact Us</h2>
+          <p className="text-lg mb-6 text-gray-800">
             Ready to elevate your litigation game? Reach out to discuss how PrometheusIQ can support your practice.
           </p>
           <form className="space-y-4">
