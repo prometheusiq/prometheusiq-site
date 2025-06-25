@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../public/logo.png";
 
 const testimonials = [
@@ -31,20 +32,20 @@ export default function PrometheusIQWebsite() {
             </svg>
           </button>
           <ul className="hidden md:flex gap-6 text-[#2f3639] text-md font-medium">
-            <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">About</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Portfolio</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
+            <li><Link to="/" className="hover:text-orange-600 transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-orange-600 transition">About</Link></li>
+            <li><Link to="/services" className="hover:text-orange-600 transition">Services</Link></li>
+            <li><Link to="/portfolio" className="hover:text-orange-600 transition">Portfolio</Link></li>
+            <li><Link to="/contact" className="hover:text-orange-600 transition">Contact</Link></li>
           </ul>
         </div>
         {navOpen && (
           <ul className="md:hidden mt-4 flex flex-col gap-4 text-[#2f3639] text-md font-medium">
-            <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">About</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Portfolio</li>
-            <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
+            <li><Link to="/" className="hover:text-orange-600 transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-orange-600 transition">About</Link></li>
+            <li><Link to="/services" className="hover:text-orange-600 transition">Services</Link></li>
+            <li><Link to="/portfolio" className="hover:text-orange-600 transition">Portfolio</Link></li>
+            <li><Link to="/contact" className="hover:text-orange-600 transition">Contact</Link></li>
           </ul>
         )}
       </nav>
