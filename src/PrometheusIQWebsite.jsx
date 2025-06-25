@@ -35,9 +35,6 @@ export default function PrometheusIQWebsite() {
 
       <header className="flex flex-col items-center justify-center text-center py-20 px-4">
         <img src={logo} alt="PrometheusIQ logo" className="w-full max-w-4xl h-auto" />
-        <p className="text-xl text-orange-600 mt-6 tracking-wide uppercase font-medium">
-          Intelligence Behind Every Argument
-        </p>
       </header>
 
       <main className="max-w-4xl mx-auto px-4">
@@ -51,7 +48,7 @@ export default function PrometheusIQWebsite() {
           <p className="mt-6 text-lg leading-relaxed text-[#2f3639]">
             Founded by seasoned trial lawyers and legal writers, PrometheusIQ brings a rare blend of tactical intelligence, writing clarity,
             and strategic judgment to every assignment. Whether you’re facing summary judgment, prepping for appeal, or mid-trial and
-            stretched thin, we’re here to elevate your advocacy—quietly, powerfully, and surgically.
+            stretched thin, we’re here to elevate your advocacy—quietly, powerfully, and precisely.
           </p>
         </section>
 
