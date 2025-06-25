@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../public/logo.png";
 
 export default function PrometheusIQWebsite() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
-      <nav className="w-full px-6 py-4 flex flex-col md:flex-row justify-between items-center bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
-        <div className="text-2xl font-bold tracking-wide mb-2 md:mb-0">
-          <span className="text-[#2f3639]">Prometheus</span><span className="text-orange-600">IQ</span>
+      <nav className="w-full px-6 py-4 bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
+        <div className="flex items-center justify-between">
+          <div className="text-2xl font-bold tracking-wide">
+            <span className="text-[#2f3639]">Prometheus</span><span className="text-orange-600">IQ</span>
+          </div>
+          <button className="md:hidden text-[#2f3639]" onClick={() => setNavOpen(!navOpen)}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <ul className="hidden md:flex gap-6 text-[#2f3639] text-md font-medium">
+            <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">About</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
+          </ul>
         </div>
-        <ul className="flex flex-col md:flex-row gap-4 md:gap-6 text-[#2f3639] text-md font-medium">
-          <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
-          <li className="hover:text-orange-600 cursor-pointer transition">About</li>
-          <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
-          <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
-        </ul>
+        {navOpen && (
+          <ul className="md:hidden mt-4 flex flex-col gap-4 text-[#2f3639] text-md font-medium">
+            <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">About</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
+          </ul>
+        )}
       </nav>
 
       <header className="flex flex-col items-center justify-center text-center py-20 px-4">
