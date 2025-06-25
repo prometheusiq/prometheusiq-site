@@ -4,18 +4,18 @@ import logo from "../public/logo.png";
 export default function PrometheusIQWebsite() {
   return (
     <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
-      <nav className="w-full px-6 py-4 flex justify-between items-center bg-[#f5f0e9] shadow-sm border-b border-gray-300">
-        <div className="text-2xl font-bold tracking-wide text-[#2f3639]">PrometheusIQ</div>
-        <ul className="flex gap-6 text-[#2f3639] text-md font-medium">
-          <li className="hover:text-orange-600 cursor-pointer">Home</li>
-          <li className="hover:text-orange-600 cursor-pointer">About</li>
-          <li className="hover:text-orange-600 cursor-pointer">Services</li>
-          <li className="hover:text-orange-600 cursor-pointer">Contact</li>
+      <nav className="w-full px-6 py-4 flex flex-col md:flex-row justify-between items-center bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
+        <div className="text-2xl font-bold tracking-wide text-orange-600 mb-2 md:mb-0">PrometheusIQ</div>
+        <ul className="flex flex-col md:flex-row gap-4 md:gap-6 text-[#2f3639] text-md font-medium">
+          <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
+          <li className="hover:text-orange-600 cursor-pointer transition">About</li>
+          <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
+          <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
         </ul>
       </nav>
 
-      <header className="flex flex-col items-center justify-center text-center py-20">
-        <img src={logo} alt="PrometheusIQ logo" className="w-4/5 max-w-4xl h-auto" />
+      <header className="flex flex-col items-center justify-center text-center py-20 px-4">
+        <img src={logo} alt="PrometheusIQ logo" className="w-full max-w-4xl h-auto" />
         <p className="text-xl text-orange-600 mt-6 tracking-wide uppercase font-medium">
           Intelligence Behind Every Argument
         </p>
@@ -62,7 +62,7 @@ export default function PrometheusIQWebsite() {
         </section>
       </main>
 
-      <footer className="text-center py-8 text-sm text-gray-600">
+      <footer className="text-center py-8 text-sm text-gray-600 px-4">
         © {new Date().getFullYear()} PrometheusIQ. All rights reserved.
       </footer>
     </div>
