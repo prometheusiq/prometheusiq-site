@@ -1,8 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../public/logo.png";
+
+const testimonials = [
+  "PrometheusIQ saved me a lot of time and stress associated with an upcoming trial. I’m happy to recommend them to anyone.",
+  "PrometheusIQ enabled me to work on other things and things that I do better than write.",
+  "I was thoroughly impressed with the work of PrometheusIQ."
+];
 
 export default function PrometheusIQWebsite() {
   const [navOpen, setNavOpen] = useState(false);
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
@@ -20,6 +34,7 @@ export default function PrometheusIQWebsite() {
             <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
             <li className="hover:text-orange-600 cursor-pointer transition">About</li>
             <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Portfolio</li>
             <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
           </ul>
         </div>
@@ -28,6 +43,7 @@ export default function PrometheusIQWebsite() {
             <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
             <li className="hover:text-orange-600 cursor-pointer transition">About</li>
             <li className="hover:text-orange-600 cursor-pointer transition">Services</li>
+            <li className="hover:text-orange-600 cursor-pointer transition">Portfolio</li>
             <li className="hover:text-orange-600 cursor-pointer transition">Contact</li>
           </ul>
         )}
@@ -62,6 +78,13 @@ export default function PrometheusIQWebsite() {
             <li>Trial Prep Materials and On-Call Drafting</li>
             <li>Paralegal Support and Research</li>
           </ul>
+        </section>
+
+        <section className="py-16 border-b border-gray-300 bg-[#fffaf3] text-center">
+          <p className="text-xl italic max-w-3xl mx-auto text-[#2f3639] transition-opacity duration-700 ease-in-out">
+            “{testimonials[testimonialIndex]}”
+          </p>
+          <p className="mt-4 text-sm text-[#2f3639]">— Anonymous Trial Lawyer</p>
         </section>
 
         <section className="py-12 border-b border-gray-300">
