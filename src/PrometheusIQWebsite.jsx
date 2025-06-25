@@ -33,9 +33,9 @@ export default function PrometheusIQWebsite() {
         )}
       </nav>
 
-      <header className="flex flex-col items-center justify-center text-center pt-8 pb-6 px-4">
-        <div className="w-full max-w-[1000px] overflow-hidden rounded-md">
-          <img src={logo} alt="PrometheusIQ logo" className="w-full h-auto object-contain" />
+      <header className="flex flex-col items-center justify-center text-center pt-6 pb-4 px-4">
+        <div className="w-full max-w-[900px]">
+          <img src={logo} alt="PrometheusIQ logo" className="w-full h-auto object-contain" style={{ maxHeight: "90vh" }} />
         </div>
       </header>
 
