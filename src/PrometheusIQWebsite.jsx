@@ -5,7 +5,9 @@ export default function PrometheusIQWebsite() {
   return (
     <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
       <nav className="w-full px-6 py-4 flex flex-col md:flex-row justify-between items-center bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
-        <div className="text-2xl font-bold tracking-wide text-orange-600 mb-2 md:mb-0">PrometheusIQ</div>
+        <div className="text-2xl font-bold tracking-wide mb-2 md:mb-0">
+          <span className="text-[#2f3639]">Prometheus</span><span className="text-orange-600">IQ</span>
+        </div>
         <ul className="flex flex-col md:flex-row gap-4 md:gap-6 text-[#2f3639] text-md font-medium">
           <li className="hover:text-orange-600 cursor-pointer transition">Home</li>
           <li className="hover:text-orange-600 cursor-pointer transition">About</li>
