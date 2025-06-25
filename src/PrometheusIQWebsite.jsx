@@ -3,10 +3,10 @@ import logo from "../public/logo.png";
 
 export default function PrometheusIQWebsite() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-gray-800 font-sans">
-      <nav className="w-full px-6 py-4 flex justify-between items-center bg-white shadow-sm border-b">
-        <div className="text-2xl font-bold tracking-wide text-gray-900">PrometheusIQ</div>
-        <ul className="flex gap-6 text-gray-700 text-md font-medium">
+    <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
+      <nav className="w-full px-6 py-4 flex justify-between items-center bg-[#f5f0e9] shadow-sm border-b border-gray-300">
+        <div className="text-2xl font-bold tracking-wide text-[#2f3639]">PrometheusIQ</div>
+        <ul className="flex gap-6 text-[#2f3639] text-md font-medium">
           <li className="hover:text-orange-600 cursor-pointer">Home</li>
           <li className="hover:text-orange-600 cursor-pointer">About</li>
           <li className="hover:text-orange-600 cursor-pointer">Services</li>
@@ -22,23 +22,23 @@ export default function PrometheusIQWebsite() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4">
-        <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Who We Are</h2>
-          <p className="text-lg leading-relaxed text-gray-800">
+        <section className="py-12 border-b border-gray-300">
+          <h2 className="text-3xl font-semibold mb-4 text-[#2f3639]">Who We Are</h2>
+          <p className="text-lg leading-relaxed text-[#2f3639]">
             PrometheusIQ is a litigation support and legal strategy firm built for attorneys who demand more from their written advocacy.
             We specialize in high-impact brief writing, motion practice, appeals, and trial support, offering behind-the-scenes firepower
             for busy litigators and lean firms.
           </p>
-          <p className="mt-6 text-lg leading-relaxed text-gray-800">
+          <p className="mt-6 text-lg leading-relaxed text-[#2f3639]">
             Founded by seasoned trial lawyers and legal writers, PrometheusIQ brings a rare blend of tactical intelligence, writing clarity,
             and strategic judgment to every assignment. Whether you’re facing summary judgment, prepping for appeal, or mid-trial and
             stretched thin, we’re here to elevate your advocacy—quietly, powerfully, and surgically.
           </p>
         </section>
 
-        <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Our Services</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg text-gray-800">
+        <section className="py-12 border-b border-gray-300">
+          <h2 className="text-3xl font-semibold mb-4 text-[#2f3639]">Our Services</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg text-[#2f3639]">
             <li>Motion and Brief Drafting</li>
             <li>Appellate Strategy and Support</li>
             <li>Trial Prep Materials and On-Call Drafting</li>
@@ -46,9 +46,9 @@ export default function PrometheusIQWebsite() {
           </ul>
         </section>
 
-        <section className="py-12 border-b">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Contact Us</h2>
-          <p className="text-lg mb-6 text-gray-800">
+        <section className="py-12 border-b border-gray-300">
+          <h2 className="text-3xl font-semibold mb-4 text-[#2f3639]">Contact Us</h2>
+          <p className="text-lg mb-6 text-[#2f3639]">
             Ready to elevate your litigation game? Reach out to discuss how PrometheusIQ can support your practice.
           </p>
           <form className="space-y-4">
@@ -62,7 +62,7 @@ export default function PrometheusIQWebsite() {
         </section>
       </main>
 
-      <footer className="text-center py-8 text-sm text-gray-500">
+      <footer className="text-center py-8 text-sm text-gray-600">
         © {new Date().getFullYear()} PrometheusIQ. All rights reserved.
       </footer>
     </div>
