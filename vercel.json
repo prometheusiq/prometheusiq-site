@@ -1,6 +1,6 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
-  ]
+  ],
+  "_note": "Triggering redeploy to fix Vercel routing"
 }
-// manual trigger
