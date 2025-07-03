@@ -7,20 +7,11 @@ export default function Contact() {
       <nav className="w-full px-6 py-4 bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold tracking-wide">
-            <span className="text-[#2f3639]">Prometheus</span><span className="text-orange-600">IQ</span>
+            <span className="text-[#2f3639]">Prometheus</span>
+            <span className="text-orange-600">IQ</span>
           </div>
-          {/* Add nav links or mobile toggle if needed */}
         </div>
       </nav>
-
-      <header className="flex flex-col items-center justify-center text-center pt-6 pb-4 px-4">
-        <img
-          src="/logo.png" // use public asset path directly
-          alt="PrometheusIQ logo"
-          className="w-3/4 h-auto object-contain"
-          style={{ maxHeight: "67.5vh" }}
-        />
-      </header>
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-semibold mb-6 text-[#2f3639]">Contact Us</h2>
