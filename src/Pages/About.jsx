@@ -1,4 +1,5 @@
 // src/pages/About.jsx
+import React from 'react';
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-16 text-[#2f3639]">
