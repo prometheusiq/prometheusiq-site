@@ -1,18 +1,16 @@
-import './index.css';   // ← loads your Tailwind directivesimport React from 'react';
+import './index.css';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-// Your top-level “App” component
-import App from './PrometheusIQWebsite.jsx';
-
-// Make sure these match the exact folder name: “Pages”
+import App       from './PrometheusIQWebsite.jsx';
 import About     from './Pages/About.jsx';
 import Services  from './Pages/Services.jsx';
 import Portfolio from './Pages/Portfolio.jsx';
 import Contact   from './Pages/Contact.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/"          element={<App />} />
@@ -22,5 +20,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/contact"   element={<Contact />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );
