@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../public/logo.png";
+import logo from "/logo.png"; // use Vite public asset path
 
 const testimonials = [
   "PrometheusIQ saved me a lot of time and stress associated with an upcoming trial. I’m happy to recommend them to anyone.",

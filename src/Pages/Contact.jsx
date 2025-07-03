@@ -1,27 +1,25 @@
 import React from "react";
-import logo from "../public/logo.png";
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-[#f5f0e9] text-gray-800 font-sans">
-      {/* NAV + BANNER (reuse from main) */}
+      {/* NAV + BANNER */}
       <nav className="w-full px-6 py-4 bg-[#f5f0e9] shadow-sm border-b border-gray-300 sticky top-0 z-50">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold tracking-wide">
             <span className="text-[#2f3639]">Prometheus</span><span className="text-orange-600">IQ</span>
           </div>
-          {/* mobile nav toggle omitted for brevity (add if needed) */}
+          {/* Add nav links or mobile toggle if needed */}
         </div>
       </nav>
+
       <header className="flex flex-col items-center justify-center text-center pt-6 pb-4 px-4">
-        <div className="w-full max-w-[900px]">
-          <img
-            src={logo}
-            alt="PrometheusIQ logo"
-            className="w-3/4 h-auto object-contain"
-            style={{ maxHeight: "67.5vh" }}
-          />
-        </div>
+        <img
+          src="/logo.png" // use public asset path directly
+          alt="PrometheusIQ logo"
+          className="w-3/4 h-auto object-contain"
+          style={{ maxHeight: "67.5vh" }}
+        />
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-12">
