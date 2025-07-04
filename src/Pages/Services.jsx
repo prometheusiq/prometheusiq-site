@@ -42,10 +42,12 @@ export default function Services() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-[#2f3639]">Services</h1>
 
-        {/* Placeholder for a services graphic */}
-        <div className="w-full h-64 bg-gray-200 rounded mb-8 flex items-center justify-center">
-          <span className="text-gray-500 italic">[Services Graphic Placeholder]</span>
-        </div>
+         <img
+  src="/ServicesIMG.png"
+  alt="Winning Work Product"
+  className="w-full h-auto rounded mb-8 object-cover"
+  style={{ maxHeight: "400px" }}
+/>
 
         {/* List of services */}
         <ul className="list-disc list-inside space-y-4 text-lg text-[#2f3639]">
@@ -65,7 +67,7 @@ export default function Services() {
             <strong>On-Demand Legal Writing:</strong> Flexible co-counsel drafting and research support to meet tight deadlines.
           </li>
           <li>
-            <strong>Paralegal and Research Services:</strong> Detailed legal research, document organization, and e-discovery support.
+            <strong>Research Services:</strong> Detailed legal research, document organization, and e-discovery support.
           </li>
         </ul>
       </main>
