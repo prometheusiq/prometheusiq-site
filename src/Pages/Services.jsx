@@ -45,7 +45,8 @@ export default function Services() {
           <img
             src="/ServicesIMG.png"
             alt="Services Overview"
-            className="w-full max-w-3xl h-auto object-contain rounded"
+            className="w-full h-auto object-cover rounded mb-8"
+            style={{ maxHeight: "400px" }}
           />
 
         {/* List of services */}
