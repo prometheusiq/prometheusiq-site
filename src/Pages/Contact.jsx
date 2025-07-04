@@ -38,9 +38,7 @@ export default function Contact() {
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-semibold mb-6 text-[#2f3639]">Contact Us</h2>
-        <p className="text-lg mb-6 text-[#2f3639]">
-          Reach out to us at <a href="mailto:prometheusiqrva@gmail.com" className="text-orange-600 hover:underline">prometheusiqrva@gmail.com</a>
-        </p>
+        
         <form className="space-y-4">
           <input className="w-full p-3 border border-gray-300 rounded" type="text" placeholder="Name" />
           <input className="w-full p-3 border border-gray-300 rounded" type="email" placeholder="Email" />
