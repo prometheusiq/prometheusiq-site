@@ -46,10 +46,13 @@ export default function About() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-[#2f3639]">About PrometheusIQ</h1>
 
-        {/* Placeholder for founders graphic */}
-        <div className="w-full h-64 bg-gray-200 rounded mb-8 flex items-center justify-center">
-          <span className="text-gray-500 italic">[Founders Graphic Placeholder]</span>
-        </div>
+        + {/* Actual founders graphic */}
++ <img
++   src="/aboutimg.png"
++   alt="Founders Seth Carroll and Isaac McBeth"
++   className="w-full h-auto rounded mb-8 object-cover"
++   style={{ maxHeight: "400px" }}
++ />
 
         <div className="space-y-6 text-lg leading-relaxed text-[#2f3639]">
           <p>
@@ -60,7 +63,7 @@ export default function About() {
           <p>
             PrometheusIQ founders Seth Carroll and Isaac McBeth have significant expertise in legal writing, case
             presentation, issue narrowing, argument, and appellate advocacy. Together they form a team that performs
-            at all levels of practice—in state and federal courts, including state and federal appellate courts.
+            at all levels of practice in state and federal courts, including state and federal appellate courts.
           </p>
           <p>
             PrometheusIQ is intended to free litigators to focus on critical aspects of case preparation, development,
