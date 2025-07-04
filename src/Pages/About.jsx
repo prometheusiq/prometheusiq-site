@@ -40,9 +40,8 @@ export default function About() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-[#2f3639]">About PrometheusIQ</h1>
 
-        {/* Actual founders graphic */}
         <img
-  src="/aboutimg.png"
+  src="/AboutIMG.png"
   alt="Founders Seth Carroll and Isaac McBeth"
   className="w-full h-auto rounded mb-8 object-cover"
   style={{ maxHeight: "400px" }}
