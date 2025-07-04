@@ -42,11 +42,11 @@ export default function About() {
 
         {/* Actual founders graphic */}
         <img
-          src="/founders.png"
-          alt="Founders Seth Carroll and Isaac McBeth"
-          className="w-full h-auto rounded mb-8 object-cover"
-          style={{ maxHeight: "400px" }}
-        />
+  src="/aboutimg.png"
+  alt="Founders Seth Carroll and Isaac McBeth"
+  className="w-full h-auto rounded mb-8 object-cover"
+  style={{ maxHeight: "400px" }}
+/>
 
         <div className="space-y-6 text-lg leading-relaxed text-[#2f3639]">
           <p>
