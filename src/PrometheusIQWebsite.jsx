@@ -53,14 +53,12 @@ export default function PrometheusIQWebsite() {
 
       {/* HEADER with Logo */}
       <header className="flex flex-col items-center justify-center text-center pt-6 pb-4 px-4">
-        <div className="w-full max-w-[900px]">
-          <img
-            src={logo}
-            alt="PrometheusIQ logo"
-            className="w-3/4 h-auto object-contain"
-            style={{ maxHeight: "67.5vh" }}
-          />
-        </div>
+        <img
+          src={logo}
+          alt="PrometheusIQ logo"
+          className="w-3/4 h-auto object-contain mx-auto"
+          style={{ maxHeight: "67.5vh" }}
+        />
       </header>
 
       {/* MAIN CONTENT */}
