@@ -42,12 +42,11 @@ export default function Services() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-[#2f3639]">Services</h1>
 
-         <img
-  src="/ServicesIMG.png"
-  alt="Winning Work Product"
-  className="w-full h-auto rounded mb-8 object-cover"
-  style={{ maxHeight: "400px" }}
-/>
+          <img
+            src="/ServicesIMG.png"
+            alt="Services Overview"
+            className="w-full max-w-3xl h-auto object-contain rounded"
+          />
 
         {/* List of services */}
         <ul className="list-disc list-inside space-y-4 text-lg text-[#2f3639]">
