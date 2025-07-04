@@ -14,13 +14,7 @@ export default function About() {
             <span className="text-orange-600">IQ</span>
           </div>
           <button className="md:hidden text-[#2f3639]" onClick={() => setNavOpen(!navOpen)}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -46,13 +40,13 @@ export default function About() {
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6 text-[#2f3639]">About PrometheusIQ</h1>
 
-        + {/* Actual founders graphic */}
-+ <img
-+   src="/aboutimg.png"
-+   alt="Founders Seth Carroll and Isaac McBeth"
-+   className="w-full h-auto rounded mb-8 object-cover"
-+   style={{ maxHeight: "400px" }}
-+ />
+        {/* Actual founders graphic */}
+        <img
+          src="/founders.png"
+          alt="Founders Seth Carroll and Isaac McBeth"
+          className="w-full h-auto rounded mb-8 object-cover"
+          style={{ maxHeight: "400px" }}
+        />
 
         <div className="space-y-6 text-lg leading-relaxed text-[#2f3639]">
           <p>
